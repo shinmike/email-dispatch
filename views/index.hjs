@@ -13,18 +13,16 @@
       <h1>Send Email</h1>
       <hr>
       <form action="/api/send" method="post">
-        <input class="form-control" type="text"  name="recipients" placeholder="Recipients" />
+        <input class="form-control" type="text" name="recipients" placeholder="Recipients" />
         <br />
-        <input class="form-control" type="text"  name="subject" placeholder="Subject" />
+        <input class="form-control" type="text" name="subject" placeholder="Subject" />
         <br />
-        <textarea class="form-control" type="text"  name="content" placeholder="Content"></textarea>
+        <textarea class="form-control" type="text" name="content" placeholder="Content"></textarea>
         <br />
         <button class="btn btn-info" type="submit">Send</button>
       </form>
     </div>
   </div>
-
-
 </body>
 
 </html>

@@ -4,7 +4,7 @@ var Promise = require('bluebird');
 module.exports = {
 
   sendEmails: function (recipients, emailInfo, completion) {
-    var from_email = new helper.Email('shinmike90@gmail.com');
+    var from_email = new helper.Email(emailInfo.from);
     var subject = emailInfo.subject;
     var content = new helper.Content('text/html', emailInfo.content);
     var sg = require('sendgrid')(process.env.SENDGRID_API_KEY);
